@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@android:color/holo_red_light</item>
+        <item name="android:statusBarColor">@color/primaria</item>
+    </style>
+    <style name="FullscreenAlerDialog" parent="Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">#A5DCAC</item>
+    </style>
+</resources>

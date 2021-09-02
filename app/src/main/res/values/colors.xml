@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <!--    <color name="secundaria">#D500FF22</color>-->
+    <!--    <color name="secundariaB">#3000FF22</color>-->
+    <color name="Mterciaria">#B5F1F0</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="textlink">#14BFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaria">#1c208f</color>
+    <color name="primariaB">#000060</color>
+    <color name="primariaL">#5949c0</color>
+    <color name="secundaria">#1de9b6</color>
+    <color name="secundariaB">#00b686</color>
+    <color name="secundariaL">#6effe8</color>
+    <color name="colorPrimaryDark">#6effe8</color>
+    <color name="colorNavItemSelected">#26A69A</color>
+    <color name="azulClaro">#00FFEA</color>
+
+
+</resources>

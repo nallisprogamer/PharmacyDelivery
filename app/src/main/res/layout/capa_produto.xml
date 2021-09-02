@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="6dp"
+    card_view:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:id="@+id/parent_item_remedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaria"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_model"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/ll_discount"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_discount"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:text="@string/offer"
+                android:textColor="@android:color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_first_line_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_model"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Captopril"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_first_horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/ll_first_line_container"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorNavItemSelected" />
+
+        <TextView
+            android:id="@+id/tv_price_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_first_horizontal_line"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="R$ 180,00"
+            android:textColor="@color/azulClaro"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_price_without_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_first_horizontal_line"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toStartOf="@+id/tv_price_current"
+            android:layout_toLeftOf="@+id/tv_price_current"
+            android:background="@drawable/tv_strike_through"
+            android:text="R$ 200,00"
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
